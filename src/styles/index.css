@@ -1,19 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 0.8;
+  color: #f1b9b9;
+  background-color: #000;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
-@layer base {
-  * {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body,
-  #__next {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+button {
+  font-size: 16px;
+  line-height: 0.8;
+  color: #f1b9b970;
+  background-color: #000;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  /* all capital */
+  text-transform: uppercase;
+
+  background-color: rgba(204, 154, 154, 0.075);
+}
+
+button:hover {
+  background-color: #f1b9b9b9;
+  color: #000;
 }

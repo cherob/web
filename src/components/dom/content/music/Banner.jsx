@@ -1,8 +1,8 @@
-// Displays a banner as the header
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
 import { useTheme } from 'next-themes'
+import styles from './Banner.module.css'
 
 export default function Banner() {
   const { theme } = useTheme()
@@ -14,7 +14,7 @@ export default function Banner() {
   }
 
   return (
-    <div className='flex flex-col items-center justify-center w-full h-full'>
+    <div className={styles.container}>
       <motion.div
         ref={ref}
         animate={controls}
@@ -26,10 +26,12 @@ export default function Banner() {
         }}
       >
         <Image
-          src={`/img/artist/banner-${theme}.png`}
+          src='/img/artist/banner.png'
           alt='banner'
           width={1920}
           height={1080}
+          layout='responsive'
+          className={styles.banner}
         />
       </motion.div>
     </div>

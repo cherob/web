@@ -1,0 +1,29 @@
+@import '../../Colors.scss';
+
+.container {
+  font-family: 'Manrope';
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  margin: 0 0.2em;
+  padding: 0.5em;
+
+  border-radius: 50%;
+  // background-color: $light-color;
+  box-shadow: 0 0 0.5em rgba(112, 112, 112, 0.2);
+  width: 1em;
+  height: 1em;
+
+  filter: invert(1);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.4);
+  background-color: $positive-color;
+}

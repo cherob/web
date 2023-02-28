@@ -1,9 +1,13 @@
 import Head from 'next/head'
 
-const titleDefault = 'React Three Next Starter'
-const url = 'https://react-three-next.vercel.app/'
-const description = 'The easiest and fastest way to create a 3D website using React Three Fiber and NextJS'
-const author = 'Author'
+
+// This is a Webstack called Node js react js next js, it is a full stack web development framework.
+// It is a framework that allows you to build a web application using JavaScript and React.
+
+const titleDefault = 'Drumni.com'
+const url = 'https://drumni.com/'
+const description = '42'
+const author = 'Robin S.'
 
 export default function Header({ title = titleDefault }) {
   return (
@@ -40,22 +44,17 @@ export default function Header({ title = titleDefault }) {
       <link rel='apple-touch-icon' sizes='32x32' href='/icons/favicon-32x32.png' />
       <link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png' />
       <link rel='manifest' href='/manifest.json' />
-      <link rel='mask-icon' color='#000000' href='/icons/safari-pinned-tab.svg' />
+      <link rel='mask-icon' color='#ffffff' href='/icons/safari-pinned-tab.svg' />
       <link rel='apple-touch-startup-image' href='/startup.png' />
-
       {/* Meta Tags for HTML pages on Mobile */}
       {/* <meta name="format-detection" content="telephone=yes"/>
         <meta name="HandheldFriendly" content="true"/>  */}
       <meta name='viewport' content='width=device-width, minimum-scale=1, initial-scale=1.0' />
       <meta name='theme-color' content='#000' />
       <link rel='shortcut icon' href='/icons/favicon.ico' />
-
       {/* 
-      Twitter Summary card
-        documentation: https://dev.twitter.com/cards/getting-started
-        Be sure validate your Twitter card markup on the documentation site. */}
       <meta name='twitter:card' content='summary' />
-      <meta name='twitter:site' content='@onirenaud' />
+      <meta name='twitter:site' content='@rand_roggen' /> */}
     </Head>
   )
 }

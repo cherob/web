@@ -7,9 +7,19 @@ const Layout = forwardRef(({ children, ...props }, ref) => {
 
   return (
     <div
+      style={{
+        position: 'relative',
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden',
+        backgroundColor: '#000000',
+        color: '#ffffff',
+        fontFamily: 'Roboto, sans-serif',
+        fontSize: '1.5rem',
+      }}
+
       {...props}
-      ref={localRef}
-      className='absolute top-0 left-0 z-10 w-screen h-screen overflow-hidden dom bg-zinc-900 text-gray-50'>
+      ref={localRef}>
       {children}
     </div>
   )

@@ -6,10 +6,10 @@
 
 import Link from 'next/link'
 
-export default function Icon({ href, src, alt, width, height }) {
+export default function Icon({ href, src, alt, width, height, invert }) {
   return (
     <Link href={href}>
-      <img src={src} alt={alt} width={width} height={height} />
+      <img src={src} alt={alt} width={width} height={height} style={{ filter: invert ? 'invert(1)' : 'invert(0)' }} />
     </Link>
   )
 }
