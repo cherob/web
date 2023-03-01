@@ -1,3 +1,7 @@
-# web
+# Drumni.com
 
-This project was bootstrapped with [`create-r3f-app`](https://github.com/utsuboco/create-r3f-app)
+This project is under construction.
+
+Currently a rough composition of the concept of my web profile
+
+In future updates, the website will also be accessible online.
